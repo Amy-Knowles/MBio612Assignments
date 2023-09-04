@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 ### Question 1
 
 *  Draw a concepts diagram that uses all the following R and programming terminology 
@@ -15,7 +20,13 @@ We can discuss your solution next week. However, you are welcome to attach an im
 
 ```{r}
 
+library(magick)
+# Specify the path to your .png file
+png_path <- "Concept_Diagram.png"
 
+# Read and display the .png image
+image <- image_read(png_path)
+image
 
 ```
 
